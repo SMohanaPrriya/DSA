@@ -1,12 +1,12 @@
 package datastructures.hashtables;
 
 public class KeyValuePair {
-    private int key;
+    private String key;
     private int value;
 
 
     //getter methods
-    public int getKey() {
+    public String getKey() {
         return key;
     }
 
@@ -14,8 +14,8 @@ public class KeyValuePair {
         return value;
     }
 
-    //setter method
-    public void setKeyValuePair(int key, int value) {
+    //parameterized constructor
+    public KeyValuePair(String key, int value) {
         this.key = key;
         this.value = value;
     }
