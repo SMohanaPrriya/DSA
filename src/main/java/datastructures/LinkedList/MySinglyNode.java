@@ -7,12 +7,12 @@ public class MySinglyNode {
 
     public MySinglyNode(int value) {
         this.value = value;
-        this.next = null;
+        next = null;
     }
 
     public MySinglyNode(int value, MySinglyNode nextNode) {
         this.value = value;
-        this.next = nextNode;
+        next = nextNode;
     }
 
     public int getValue() {
