@@ -95,6 +95,24 @@ public class MySinglyLinkedList {
         System.out.println();
     }
 
+    void reverseLinkedList() {
+        if(getHead() == getTail()) {
+            displayLinkedlist();
+        } else {
+            MySinglyNode currentNode = getHead();
+            MySinglyNode previousNode = null;
+            MySinglyNode nextNode = null;
+            while(currentNode!=null) {
+                nextNode = currentNode.getNext();
+                currentNode.setNext(previousNode);
+                previousNode = currentNode;
+                currentNode = nextNode;
+            }
+            head = previousNode;
+            displayLinkedlist();
+        }
+    }
+
     public static void main(String[] args) {
         MySinglyLinkedList list = new MySinglyLinkedList(10);
         list.displayLinkedlist();
@@ -105,5 +123,7 @@ public class MySinglyLinkedList {
         list.insertNodeToLinkedList(2, 50);
         int index = 2;
         System.out.printf("Deleted value: %d at the index: %d", list.deleteNode(index), index);
+        System.out.println();
+        list.reverseLinkedList();
     }
 }
