@@ -42,6 +42,9 @@ public class QueueUsingLinkedList {
         }
         String returnValue = first.getValue();
         first = first.getNext();
+        if(first == last) {
+            last = null;
+        }
         return returnValue;
     }
 
@@ -65,6 +68,10 @@ public class QueueUsingLinkedList {
         System.out.printf("Peek Value: %s %n", newQueue.peek());
         System.out.printf("Dequeue Value: %s %n", newQueue.dequeue());
         newQueue.printQueue();
+        System.out.printf("Dequeue Value: %s %n", newQueue.dequeue());
+        System.out.printf("Dequeue Value: %s %n", newQueue.dequeue());
+        System.out.printf("Dequeue Value: %s %n", newQueue.dequeue());
+        System.out.printf("Dequeue Value: %s %n", newQueue.dequeue());
     }
 
 }
