@@ -1,4 +1,4 @@
-package datastructures.hashtables;
+package datastructures.Hashtables;
 
 import java.util.ArrayList;
 import java.util.Arrays;

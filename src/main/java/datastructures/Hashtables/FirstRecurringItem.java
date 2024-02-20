@@ -1,4 +1,4 @@
-package datastructures.hashtables;
+package datastructures.Hashtables;
 
 //Google Question
 //Given an array = [2,5,1,2,3,5,1,2,4]: It should return 2

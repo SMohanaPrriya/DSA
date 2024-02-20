@@ -1,4 +1,4 @@
-package datastructures.hashtables;
+package datastructures.Hashtables;
 
 public class KeyValuePair {
     private String key;

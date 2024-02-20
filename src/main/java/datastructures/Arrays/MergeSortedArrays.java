@@ -1,4 +1,4 @@
-package datastructures.arrays;
+package datastructures.Arrays;
 
 /*.............. Merge Sorted Arrays ..............*/
 // input: [0,3,4,31] and [4,6,30]
